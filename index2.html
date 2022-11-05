@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS battle prblm 2</title>
+	<style>
+		.bade{
+			display: flex;
+
+			align-items: center;
+			justify-content: center;
+			justify-items: center;
+			width: 100%;
+			/* min-width: 50%; */
+		}
+		.dada{
+			display: grid;
+			border: 2px solid rgba(14, 235, 247, 0.511);
+			box-shadow: 7px 7px 10px rgb(13, 243, 255);
+			border-radius: 1rem;
+			grid-template-rows: repeat(6, minmax(0, 1fr));
+			/* padding: 1rem; */
+			margin: 1rem;
+			/* gap: 1rem; */
+		}
+		.div1{
+			grid-row: span 6;
+			/* background-color: aqua; */
+			padding: 1rem;
+			border-bottom: 2px solid black;
+		}
+		.div2{
+			/* background-color: bisque; */
+			display: flex;
+			padding-left: 0.5rem;
+			padding-right: 0.5rem;
+			justify-content: space-between;
+		}
+		.div3{
+			/* background-color: darkcyan; */
+			display: flex;
+			padding-left: 0.5rem;
+			padding-right: 0.5rem;
+			justify-content: space-between;
+		}
+		.div4{
+			/* background-color: beige; */
+			padding: 0.5rem;
+		}
+		.div5{
+			/* background-color: hotpink; */
+			display: flex;
+			justify-content: space-between;
+			padding: 0.5rem;
+		}
+		.div6{
+			padding: 0.5rem;
+		}
+		.tag-quantity{
+			display: flex;
+			justify-content: space-between;
+		}
+		.sizes{
+			display: flex;
+			justify-content: space-between;
+		}
+		button{
+			border-color: yellow;
+			border-radius: 5px;
+			background-color: rgb(254, 254, 6);
+			padding: 0.3rem;
+			padding-left: 0.8rem;
+			padding-right: 0.8rem;
+			color: rgb(0, 0, 0);
+		}
+		#but2{
+			border-color: rgb(254, 134, 6);
+			background-color: rgb(254, 134, 6);
+		}
+		/* .div1:hover{
+			animation-name: anime1;
+  			animation-duration: 2s;
+			
+			@keyframes anime1 {
+				0%{
+					background: src="https://assets.adidas.com/images/w_600,f_auto,q_auto/b4243520a2a34615befda80b00d5d3b0_9366/Trefoil_Tee_Black_CW0709_01_laydown.jpg"
+				}
+				50%{
+					background: src="https://m.media-amazon.com/images/I/81YINXHe6WL._AC_SX342_.jpg"
+				}
+			}
+		} */
+				
+
+		
+	</style>
+</head>
+<body>
+	<div class="bade">
+		<div class="dada">
+			<div class="div1">
+				<img id="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-qoA-n29SBfV2tEaBaOPPEWl1jQuDhGQn5OdF7ZOGAl30NKYZQfbcs113lFEjcsCUYH0&usqp=CAU" alt="" srcset="">
+			</div>
+			<div class="div2">
+			
+                    <span style="font-size: 20px;font-weight: 800;">Addidas Original</span>
+					<span style="font-size: 20px;font-weight: 800; color: blue;">₹290</span>
+                
+			</div>
+			<div class="div3">
+				<span style="color:rgb(77, 75, 75) ;">Premium Quality T-Shirt</span>
+                <span color:rgb(77, 75, 75) ;><s>₹400</s></span>
+			</div>
+			<div class="div4">
+				<div class="sizes">
+                    <input type="radio" id="s" name="size" value="s" />
+                    <label for="s">S</label>
+                    <input type="radio" id="m" name="size" value="m" />
+                    <label for="m">M</label>
+                    <input type="radio" id="l" name="size" value="l" />
+                    <label class="selected" for="l">L</label>
+                    <input type="radio" id="xl" name="size" value="xl" />
+                    <label for="xl">XL</label>
+                </div>
+			</div>
+			<div class="div6">
+				<div class="tag-quantity">
+					<div class="tag">
+						<span style="border: 2px solid rgb(176, 98, 183); padding: 2px; border-radius: 0.5rem; background: rgb(176, 98, 183);">Application Club</span>
+					</div>
+					<div class="quantity">
+						<button>+</button>
+						<span>2</span>
+						<button>-</button>
+					</div>
+				</div>
+			</div>
+			<div class="div5">
+				
+					<button id="but1" type="submit">Add To Cart</button>
+					<button id="but2" type="submit">Buy Now</button>
+				
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<!-- 
+    Problem Statement 2
+
+    Event: CSS Battle
+    Tagline: Battle It Out - The CSS Version
+    Problem Statement designed by: 
+    Prakhar Gupta
+    (MCA Final Year)
+    Departmental Co-ordinator, CSED
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Card</title>
+</head>
+<body>
+    <div class="product-card">
+        <span id="discount">- 18%</span>
+        <div class="img">
+            <img src="tshirt.jpeg"> 
+        </div>
+        <div class="product-details">
+            <div class="prod-name-price">
+                <div class="prod-name">
+                    <span>Addidas Original</span>
+                    <span>Premium Quality T-Shirt</span>
+                </div>
+                <div class="prod-price">
+                    <span>₹290</span>
+                    <span><s>₹400</s></span>
+                </div>
+            </div>
+            <div class="size">
+                <div class="sizes">
+                    <input type="radio" id="s" name="size" value="s" />
+                    <label for="s">S</label>
+                    <input type="radio" id="m" name="size" value="m" />
+                    <label for="m">M</label>
+                    <input type="radio" id="l" name="size" value="l" />
+                    <label class="selected" for="l">L</label>
+                    <input type="radio" id="xl" name="size" value="xl" />
+                    <label for="xl">XL</label>
+                </div>
+            </div>
+            <div class="tag-quantity">
+                <div class="tag">
+                    <span>Application Club</span>
+                </div>
+                <div class="quantity">
+                    <button>+</button>
+                    <span>2</span>
+                    <button>-</button>
+                </div>
+            </div>
+            <div class="btn">
+                <button type="submit">Add To Cart</button>
+                <button type="submit">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> -->
